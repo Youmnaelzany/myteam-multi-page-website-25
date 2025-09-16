@@ -32,7 +32,7 @@ const MobileMenu = () => {
             <li>
               <Link
                 href="/"
-                className="block text-lg font-semibold capitalize transition-colors duration-300 ease-in-out hover:text-[#F67E7E]"
+                className="block text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#F67E7E]"
                 onClick={handleClose}
               >
                 home
@@ -41,7 +41,7 @@ const MobileMenu = () => {
             <li>
               <Link
                 href="/about"
-                className="block text-lg font-semibold capitalize transition-colors duration-300 ease-in-out hover:text-[#F67E7E]"
+                className="block text-lg font-semibold transition-colors duration-300 ease-in-out hover:text-[#F67E7E]"
                 onClick={handleClose}
               >
                 about

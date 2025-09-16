@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Livvic } from "next/font/google";
 
+import Footer from "@/components/Navigation/Footer";
 import Header from "@/components/Navigation/Header";
 import Wrapper from "@/components/Navigation/Wrapper";
 
@@ -86,6 +87,7 @@ export default function RootLayout({
           <Header />
         </Wrapper>
         <Wrapper>{children}</Wrapper>
+        <Footer />
       </body>
     </html>
   );
