@@ -9,7 +9,7 @@ import Wrapper from "./Wrapper";
 const Header = () => {
   return (
     <header className="">
-      <Wrapper className="flex items-center justify-between gap-6 py-6">
+      <Wrapper className="flex items-center justify-between gap-6 py-8">
         <div className="flex items-center gap-6 md:gap-12 lg:gap-20">
           <Link href="/" aria-label="myteam home" className="shrink-0">
             <Image
