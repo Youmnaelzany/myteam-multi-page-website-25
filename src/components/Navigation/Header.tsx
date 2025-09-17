@@ -4,10 +4,12 @@ import Link from "next/link";
 import MobileMenu from "@/components/Navigation/MobileMenu";
 import { Button } from "@/components/ui/button";
 
+import Wrapper from "./Wrapper";
+
 const Header = () => {
   return (
-    <header className="py-6">
-      <div className="flex items-center justify-between gap-6">
+    <header className="">
+      <Wrapper className="flex items-center justify-between gap-6 py-6">
         <div className="flex items-center gap-6 md:gap-12 lg:gap-20">
           <Link href="/" aria-label="myteam home" className="shrink-0">
             <Image
@@ -44,15 +46,15 @@ const Header = () => {
           <Link href="/contact" className="hidden md:block">
             <Button
               type="button"
-              size={"lg"}
-              className="cursor-pointer rounded-full border border-white bg-transparent text-lg leading-6.5 font-semibold tracking-normal text-white transition-colors duration-300 ease-in-out hover:border-none hover:bg-white hover:text-[#002529]"
+              size="lg"
+              className="cursor-pointer rounded-full border border-white bg-transparent px-8 py-3 text-lg font-semibold text-white transition-colors duration-300 ease-in-out hover:border-none hover:bg-white hover:text-[#002529]"
             >
               contact us
             </Button>
           </Link>
           <MobileMenu />
         </div>
-      </div>
+      </Wrapper>
     </header>
   );
 };
