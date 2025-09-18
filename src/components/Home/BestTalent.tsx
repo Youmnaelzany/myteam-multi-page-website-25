@@ -14,7 +14,7 @@ const BestTalent = () => {
         alt=""
         width={200}
         height={200}
-        className="hidden lg:absolute lg:top-0 lg:-left-25 lg:flex"
+        className="top-25 hidden lg:absolute lg:-left-25 lg:flex lg:-bg-conic-120"
         aria-hidden="true"
         priority={false}
         loading="lazy"
