@@ -78,8 +78,18 @@ const MeetTheDirectors = () => {
   };
 
   return (
-    <section className="bg-[#004047]">
-      <Wrapper className="flex flex-col items-center justify-center gap-12 py-[5.5rem] text-center md:py-[6.25rem] lg:gap-16 lg:py-[8.75rem]">
+    <section className="relative overflow-hidden bg-[#004047]">
+      {/* Background Pattern - Top Left */}
+      <Image
+        src="/bg-pattern-about-2-contact-1.svg"
+        alt=""
+        width={200}
+        height={200}
+        className="absolute -top-25 -left-25 md:top-0"
+        aria-hidden="true"
+      />
+
+      <Wrapper className="flex flex-col items-center justify-center gap-12 py-[7.5rem] text-center md:py-[7.25rem] lg:gap-16 lg:py-[8.75rem]">
         <h2 className="text-[2rem] leading-8 font-bold tracking-normal text-white lg:text-5xl lg:leading-12">
           Meet the directors
         </h2>
@@ -189,6 +199,15 @@ const MeetTheDirectors = () => {
           })}
         </div>
       </Wrapper>
+      {/* Background Pattern - Bottom Right */}
+      <Image
+        src="/bg-pattern-home-4-about-3.svg"
+        alt=""
+        width={147}
+        height={100}
+        className="absolute right-0 bottom-0"
+        aria-hidden="true"
+      />
     </section>
   );
 };
