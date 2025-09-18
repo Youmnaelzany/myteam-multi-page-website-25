@@ -18,6 +18,7 @@ const BestTalent = () => {
         aria-hidden="true"
         priority={false}
         loading="lazy"
+        sizes="(max-width: 1024px) 0px, 200px"
       />
 
       <Wrapper className="flex flex-col items-center justify-center gap-4 pt-32 pb-56 text-center md:justify-between md:gap-6 md:pt-28 md:pb-52 lg:flex-row lg:items-end lg:px-26 lg:pb-56 lg:text-left">
@@ -29,16 +30,18 @@ const BestTalent = () => {
           Find the best <span className="text-[#F67E7E]">talent</span>
         </h1>
         {/* Descriptive paragraph with proper semantic structure */}
-        <p className="relative text-[0.9375rem] leading-7 font-semibold text-white md:w-[457px] lg:w-[445px] lg:text-lg">
+        <div className="relative">
           {/* Decorative border */}
           <div
             className="absolute -top-20 left-0 hidden h-1 w-[50px] bg-[#79C8C7] lg:flex"
             aria-hidden="true"
           />
-          Finding the right people and building high performing teams can be
-          hard. Most companies aren&apos;t tapping into the abundance of global
-          talent. We&apos;re about to change that.
-        </p>
+          <p className="text-[0.9375rem] leading-7 font-semibold text-white md:w-[457px] lg:w-[445px] lg:text-lg">
+            Finding the right people and building high performing teams can be
+            hard. Most companies aren&apos;t tapping into the abundance of
+            global talent. We&apos;re about to change that.
+          </p>
+        </div>
       </Wrapper>
 
       {/* Right background pattern */}
@@ -51,6 +54,7 @@ const BestTalent = () => {
         aria-hidden="true"
         priority={false}
         loading="lazy"
+        sizes="(max-width: 768px) 358px, 358px"
       />
     </section>
   );

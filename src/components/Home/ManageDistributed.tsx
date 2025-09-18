@@ -46,6 +46,7 @@ const ManageDistributed = () => {
         aria-hidden="true"
         priority={false}
         loading="lazy"
+        sizes="(max-width: 1024px) 200px, 200px"
       />
 
       <Wrapper className="flex justify-center py-32 md:py-28 lg:pb-32">
@@ -84,6 +85,7 @@ const ManageDistributed = () => {
                     height={72}
                     loading="lazy"
                     className="h-auto w-auto"
+                    sizes="72px"
                   />
                 </div>
                 <div className="space-y-2 md:space-y-4">

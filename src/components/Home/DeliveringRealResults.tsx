@@ -69,7 +69,7 @@ const DeliveringRealResults = () => {
                   aria-hidden="true"
                 />
                 <blockquote className="relative z-50 text-[0.9375rem] leading-[1.5625rem] font-semibold text-white">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </blockquote>
               </div>
 

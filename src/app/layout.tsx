@@ -3,6 +3,7 @@ import { Livvic } from "next/font/google";
 
 import Footer from "@/components/Navigation/Footer";
 import Header from "@/components/Navigation/Header";
+import WebVitals from "@/components/Performance/WebVitals";
 
 import "./globals.css";
 
@@ -81,9 +82,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${livvic.className} bg-[#014E56] antialiased`}>
+      <body
+        className={`${livvic.className} bg-[#014E56] antialiased`}
+        suppressHydrationWarning={true}
+      >
         <Header />
-
+        <WebVitals />
         {children}
         <Footer />
       </body>
